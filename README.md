@@ -33,12 +33,6 @@ oc new-build --name=django --strategy=docker --binary
 oc start-build django --from-dir=./docker/django/
 ```
 
-nginx-route.yamlを作成します。
-```
-cd k8s/base/
-./entrypoint.sh
-```
-
 デプロイします。
 ```
 oc apply -k .
