@@ -35,6 +35,7 @@ oc start-build django --from-dir=./docker/django/
 
 デプロイします。
 ```
+cd k8s/base
 oc apply -k .
 ```
 
