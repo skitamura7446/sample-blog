@@ -10,11 +10,11 @@ spec:
   serviceName: mysql
   selector:
     matchLabels:
-      app: mysql
+      app: sample-blog
   template:
     metadata:
       labels:
-        app: mysql
+        app: sample-blog
     spec:
       containers:
       - name: mysql

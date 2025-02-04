@@ -3,3 +3,5 @@ kind: ServiceAccount
 metadata:
   name: sample-blog
   namespace: sample-blog
+  labels:
+    app: sample-blog

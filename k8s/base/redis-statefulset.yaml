@@ -10,11 +10,11 @@ spec:
   serviceName: redis
   selector:
     matchLabels:
-      app: redis
+      app: sample-blog
   template:
     metadata:
       labels:
-        app: redis
+        app: sample-blog
     spec:
       containers:
       - name: redis

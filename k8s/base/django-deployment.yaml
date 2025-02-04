@@ -11,11 +11,11 @@ spec:
   replicas: 1 
   selector:
     matchLabels:
-      app: django
+      app: sample-blog
   template:
     metadata:
       labels:
-        app: django
+        app: sample-blog
     spec:
       initContainers:
       - name: init-connection
