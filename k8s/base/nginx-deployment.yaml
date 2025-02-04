@@ -16,6 +16,7 @@ spec:
     metadata:
       labels:
         app: sample-blog
+        tier: nginx
     spec:
       containers:
       - name: nginx

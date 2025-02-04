@@ -4,6 +4,7 @@ metadata:
   name: mysql-conf
   labels:
     app: sample-blog
+    tier: mysql
 data:
   MYSQL_USER: sampleblog
   MYSQL_DATABASE: sampleblog

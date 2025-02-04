@@ -4,5 +4,6 @@ metadata:
   name: redis-conf
   labels:
     app: sample-blog
+    tier: redis
 data:
   REDIS_HOST: redis

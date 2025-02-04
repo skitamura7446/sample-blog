@@ -6,6 +6,7 @@ metadata:
     app.openshift.io/connects-to: '["mysql", "redis"]'
   labels:
     app: sample-blog
+    tier: django
     app.kubernetes.io/part-of: sample-blog
 spec:
   replicas: 1 
@@ -16,6 +17,7 @@ spec:
     metadata:
       labels:
         app: sample-blog
+        tier: django
     spec:
       initContainers:
       - name: init-connection

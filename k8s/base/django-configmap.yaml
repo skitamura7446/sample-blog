@@ -4,6 +4,7 @@ metadata:
   name: django-mysql-conf
   labels:
     app: sample-blog
+    tier: django
 data:
   MYSQL_USER: sampleblog
   MYSQL_DATABASE: sampleblog

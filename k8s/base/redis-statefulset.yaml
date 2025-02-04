@@ -4,6 +4,7 @@ metadata:
   name: redis
   labels:
     app: sample-blog
+    tier: redis
     app.kubernetes.io/part-of: sample-blog
 spec:
   replicas: 1
@@ -15,6 +16,7 @@ spec:
     metadata:
       labels:
         app: sample-blog
+        tier: redis
     spec:
       containers:
       - name: redis

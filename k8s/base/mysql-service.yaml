@@ -4,10 +4,11 @@ metadata:
   name: mysql
   labels:
     app: sample-blog
+    tier: mysql
 spec:
   type: ClusterIP
   selector:
-    app: mysql
+    tier: mysql
   ports:
   - protocol: TCP
     port: 3306
