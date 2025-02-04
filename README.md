@@ -9,7 +9,7 @@ Web+APP+DBの一般的なWeb3層アプリになっています。
 ここではアプリケーションのデプロイ手順と操作方法をまとめます。
 
 # 前提条件
-* OpenShift 4.10 (要Subscription)
+* Red Hat OpenShift on AWS 4.16.19
 * cluster-admin権限を持つUser
 
 
