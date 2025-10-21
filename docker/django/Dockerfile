@@ -1,4 +1,5 @@
-FROM registry.access.redhat.com/ubi8/python-39
+#FROM registry.redhat.io/ubi8/python-39:latest
+FROM registry.redhat.io/ubi9/python-312
 
 ADD ./app . 
 RUN pip install -r requirements.txt

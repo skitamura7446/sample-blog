@@ -19,7 +19,7 @@ spec:
       protocol: TCP
   podSelector:
     matchLabels:
-      app: nginx
+      tier: nginx
   policyTypes:
   - Ingress
 
@@ -34,13 +34,13 @@ spec:
   - from:
     - podSelector:
         matchLabels:
-          app: nginx
+          tier: nginx
     ports:
     - port: 8000
       protocol: TCP
   podSelector:
     matchLabels:
-      app: django
+      tier: django
   policyTypes:
   - Ingress
 
@@ -55,13 +55,13 @@ spec:
   - from:
     - podSelector:
         matchLabels:
-          app: django
+          tier: django
     ports:
     - port: 3306
       protocol: TCP
   podSelector:
     matchLabels:
-      app: mysql
+      tier: mysql
   policyTypes:
   - Ingress
 
@@ -76,12 +76,12 @@ spec:
   - from:
     - podSelector:
         matchLabels:
-          app: django
+          tier: django
     ports:
     - port: 6379
       protocol: TCP
   podSelector:
     matchLabels:
-      app: redis
+      tier: redis
   policyTypes:
   - Ingress

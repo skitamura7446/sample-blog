@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/ubi8/nginx-120
+FROM registry.redhat.io/ubi9/nginx-126
 
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY default.conf /etc/nginx/conf.d/default.conf
